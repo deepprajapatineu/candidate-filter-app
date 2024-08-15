@@ -108,7 +108,7 @@ const CandidateList = ({ candidates }) => {
                         bgcolor: 'background.paper',
                         border: '0px solid #000',
                         boxShadow: 24,
-                        p: 8,
+                        p: 1,
                     }}
                 >
                     <Typography id="modal-title" variant="h6" component="h2">
