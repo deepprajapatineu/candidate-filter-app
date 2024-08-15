@@ -81,10 +81,16 @@ The Candidate Filter Application is a React-based web application designed to he
 - **Performance Optimization**: Used useCallback to memoize the filterCandidates function, preventing unnecessary re-renders.
 - **Responsive Design**: Implemented responsive design using Material-UI's Grid system and custom CSS to ensure a good user experience across devices.
 - **Animations**: Applied smooth animations for card hover effects and transitions to improve user interaction.
+- **Deployment**: The app is hosted on GitHub Pages, making it easily accessible without the need for local setup.
+
+## Live Demo
+
+You can view the live version of the Candidate Filter Application here: [Candidate Filter App](https://deepprajapatineu.github.io/candidate-filter-app/)
+
 
 ## Video Demonstration
 
-A video demonstration of the application, showcasing how the filters work and how candidates are matched with job descriptions, can be found [here](URL-to-video).
+A video demonstration of the application, showcasing how the filters work and how candidates are matched with job descriptions, can be found [here](https://drive.google.com/file/d/1s8WiCz7XQ8RhUGiBm8F1BAVR75OMNrzx/view?usp=drive_link).
 
 ## License
 
