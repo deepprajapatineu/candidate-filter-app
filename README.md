@@ -58,6 +58,7 @@ The Candidate Filter Application is a React-based web application designed to he
 - **Education**: Choose the level of education from the dropdown.
 - **Location**: Choose the location from the dropdown.
 - **Availability**: Toggle the checkbox to filter by availability.
+- **Debounce Logic**: The filtering operation is debounced by 500ms using setTimeout to prevent unnecessary filtering on rapid changes.
 
 ### Candidate Matching:
 
@@ -76,6 +77,8 @@ The Candidate Filter Application is a React-based web application designed to he
 ## Design Decisions and Trade-Offs
 
 - **State Management**: Chose `useReducer` over `useState` for managing multiple filter states due to its ability to handle complex state logic more cleanly.
+- **Debounce Mechanism**: Introduced a 500ms debounce to delay the filtering operation, reducing the number of operations and improving performance.
+- **Performance Optimization**: Used useCallback to memoize the filterCandidates function, preventing unnecessary re-renders.
 - **Responsive Design**: Implemented responsive design using Material-UI's Grid system and custom CSS to ensure a good user experience across devices.
 - **Animations**: Applied smooth animations for card hover effects and transitions to improve user interaction.
 
