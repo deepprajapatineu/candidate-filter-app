@@ -1,9 +1,9 @@
-import React, { useReducer, useEffect, useState } from 'react';
+import React, { useReducer, useEffect, useState, useCallback } from 'react';
 import FilterPanel from '../filterPanel/FilterPanel';
 import CandidateList from '../candidateList/CandidateList';
 import candidatesData from '../../data/candidates.json';
 import jobDescriptionsData from '../../data/jobDescriptions.json';
-import  calculateMatchScore  from '../../utils/calculateMatchScore';
+import calculateMatchScore from '../../utils/calculateMatchScore';
 
 const initialState = {
     skills: [],
@@ -33,17 +33,8 @@ const filterReducer = (state, action) => {
 const MainContent = () => {
     const [filters, dispatch] = useReducer(filterReducer, initialState);
     const [filteredCandidates, setFilteredCandidates] = useState(candidatesData);
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            filterCandidates();
-            setLoading(false);
-        }, 500);
-        return () => clearTimeout(timer);
-    }, [filters]);
-
-    const filterCandidates = () => {
+    const filterCandidates = useCallback(() => {
         let candidates = candidatesData;
 
         if (filters.skills.length > 0) {
@@ -86,7 +77,14 @@ const MainContent = () => {
         candidates.sort((a, b) => b.matchScore - a.matchScore);
 
         setFilteredCandidates(candidates);
-    };
+    }, [filters]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            filterCandidates();
+        }, 500);
+        return () => clearTimeout(timer);
+    }, [filterCandidates]);
 
     return (
         <div>
