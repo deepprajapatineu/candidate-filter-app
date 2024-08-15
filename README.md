@@ -4,6 +4,10 @@
 
 The Candidate Filter Application is a React-based web application designed to help users filter and view candidates based on various criteria such as skills, experience, education, and location. The application also allows for a detailed view of candidates and displays their match score based on predefined job descriptions.
 
+## Live Demo
+
+You can view the live version of the Candidate Filter Application here: [Candidate Filter App](https://deepprajapatineu.github.io/candidate-filter-app/)
+
 ## Features
 
 - **Filter Candidates**: Users can filter candidates by skills, experience, education, location, and availability.
@@ -82,11 +86,6 @@ The Candidate Filter Application is a React-based web application designed to he
 - **Responsive Design**: Implemented responsive design using Material-UI's Grid system and custom CSS to ensure a good user experience across devices.
 - **Animations**: Applied smooth animations for card hover effects and transitions to improve user interaction.
 - **Deployment**: The app is hosted on GitHub Pages, making it easily accessible without the need for local setup.
-
-## Live Demo
-
-You can view the live version of the Candidate Filter Application here: [Candidate Filter App](https://deepprajapatineu.github.io/candidate-filter-app/)
-
 
 ## Video Demonstration
 
