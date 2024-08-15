@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/deepprajapatineu/candidate-filter-app.git/static/css/main.220ddaae.css",
+    "main.js": "/deepprajapatineu/candidate-filter-app.git/static/js/main.7e03d3db.js",
+    "static/js/453.348b8aaa.chunk.js": "/deepprajapatineu/candidate-filter-app.git/static/js/453.348b8aaa.chunk.js",
+    "index.html": "/deepprajapatineu/candidate-filter-app.git/index.html",
+    "main.220ddaae.css.map": "/deepprajapatineu/candidate-filter-app.git/static/css/main.220ddaae.css.map",
+    "main.7e03d3db.js.map": "/deepprajapatineu/candidate-filter-app.git/static/js/main.7e03d3db.js.map",
+    "453.348b8aaa.chunk.js.map": "/deepprajapatineu/candidate-filter-app.git/static/js/453.348b8aaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.220ddaae.css",
+    "static/js/main.7e03d3db.js"
+  ]
+}

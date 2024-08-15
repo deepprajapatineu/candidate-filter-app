@@ -1,0 +1,2 @@
+body{background-color:#f5f5f5;box-sizing:border-box;margin:0;padding:0}.card-container{cursor:pointer;transition:transform .8s ease,box-shadow .6s ease}.card-container:hover{box-shadow:0 8px 16px #0000004d;transform:scale(.98)}.App{font-family:Arial,sans-serif;margin:0 auto;max-width:1200px;padding:20px}h1{text-align:center}.animated-container{animation:fadeIn 1s ease-in-out}@keyframes fadeIn{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+/*# sourceMappingURL=main.220ddaae.css.map*/
